@@ -18,45 +18,36 @@ PHP'yi sisteminize kurmak için çeşitli yollar vardır. Yaygın yöntemler ara
 
 ## Temel Söz Dizimi
 PHP kodu, `<?php ... ?>` etiketleri arasında yazılır. Temel bir PHP dosyası şu şekilde görünür:
-
-```php
 <?php
 echo "Merhaba Dünya!";
 ?>
-Değişkenler
-PHP'de değişkenler $ işareti ile tanımlanır.
 
-php
-Kodu kopyala
+## Değişkenler
+PHP'de değişkenler $ işareti ile tanımlanır.
 <?php
 $isim = "Ali";
 $yas = 25;
 echo "İsim: $isim, Yaş: $yas";
 ?>
-Veri Tipleri
+
+## Veri Tipleri
 PHP'de yaygın olarak kullanılan veri tipleri şunlardır:
+# String
+# Integer
+# Float
+# Boolean
+# Array
+# Object
+# NULL
 
-String
-Integer
-Float
-Boolean
-Array
-Object
-NULL
-Diziler
+## Diziler
 PHP'de diziler, birden fazla değeri tek bir değişkende saklamak için kullanılır.
-
-php
-Kodu kopyala
 <?php
 $meyveler = array("Elma", "Armut", "Muz");
 echo $meyveler[0]; // Elma
 ?>
-Koşul İfadeleri
-PHP'de koşul ifadeleri if, else, elseif ve switch ifadeleri ile yapılır.
 
-php
-Kodu kopyala
+## Koşul İfadeleri
 <?php
 $sayi = 10;
 
@@ -68,11 +59,9 @@ if ($sayi > 0) {
     echo "Sıfır";
 }
 ?>
-Döngüler
-PHP'de döngüler, tekrarlı işlemleri gerçekleştirmek için kullanılır.
 
-php
-Kodu kopyala
+## Döngüler
+PHP'de döngüler, tekrarlı işlemleri gerçekleştirmek için kullanılır.
 <?php
 // for döngüsü
 for ($i = 0; $i < 5; $i++) {
@@ -84,7 +73,6 @@ $i = 0;
 while ($i < 5) {
     echo "Sayı: $i\n";
     $i++;
-}
 
 // foreach döngüsü
 $renkler = array("Kırmızı", "Yeşil", "Mavi");
@@ -92,11 +80,9 @@ foreach ($renkler as $renk) {
     echo "Renk: $renk\n";
 }
 ?>
-Fonksiyonlar
-Fonksiyonlar, belirli bir görevi yerine getiren kod bloklarıdır.
 
-php
-Kodu kopyala
+## Fonksiyonlar
+Fonksiyonlar, belirli bir görevi yerine getiren kod bloklarıdır.
 <?php
 function topla($a, $b) {
     return $a + $b;
@@ -105,30 +91,24 @@ function topla($a, $b) {
 $sonuc = topla(5, 10);
 echo "Toplam: $sonuc";
 ?>
-Form İşleme
-PHP, HTML formlarından veri almak için kullanılır.
 
-html
-Kodu kopyala
+## Form İşleme
+PHP, HTML formlarından veri almak için kullanılır.
 <!-- HTML Form -->
 <form action="islem.php" method="post">
     İsim: <input type="text" name="isim"><br>
     Yaş: <input type="text" name="yas"><br>
     <input type="submit">
 </form>
-php
-Kodu kopyala
 <?php
 // islem.php
 $isim = $_POST['isim'];
 $yas = $_POST['yas'];
 echo "İsim: $isim, Yaş: $yas";
 ?>
-Veritabanı Bağlantısı
-PHP, MySQL gibi veritabanları ile etkileşimde bulunabilir.
 
-php
-Kodu kopyala
+## Veritabanı Bağlantısı
+PHP, MySQL gibi veritabanları ile etkileşimde bulunabilir.
 <?php
 $servername = "localhost";
 $username = "root";
@@ -156,10 +136,10 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
-Sonuç
+
+## Sonuç
 PHP, dinamik web sayfaları oluşturmak için güçlü ve esnek bir dildir. Temel bilgilerle başlamak, ileri düzey PHP özelliklerini öğrenmek için sağlam bir temel oluşturur.
+Bu dökümantasyon, PHP'nin temel özelliklerini ve kullanımını kapsayan başlangıç düzeyinde bir kılavuz niteliğindedir. Daha ileri konular için PHP'nin resmi dökümantasyonunu inceleyebilirsiniz.
 
-rust
-Kodu kopyala
 
-Bu dökümantasyon, PHP'nin temel özelliklerini ve kullanımını kapsayan başlangıç düzeyinde bir kıla
+
